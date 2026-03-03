@@ -100,6 +100,23 @@ Open your web browser and go to:
 http://localhost:3000
 ```
 
+- **Theme update:** The HTML/CSS pages in `public/` now use a modern "glassmorphism" theme inspired by the Official Seal of Ormoc City. The primary background is clean white, with a deep‑blue (`#002f6c`) sidebar and light‑blue (`#a7c7e7`) accents. Input fields are rounded with light‑blue borders and deep‑blue icons. The login button, links and error alerts follow the palette. Refresh your browser to pick up the new look.
+
+### React Dashboard Theme
+The React example under `frontend/` also implements the same color scheme and provides a fixed deep‑blue sidebar containing:
+- Home
+- Masterlist
+- Scanner
+- Overview
+- Announcements and Updates
+- Community Service Status
+- Documents
+- Concerns
+
+Clicking each item updates the main content area (welcome message, placeholder data) without a page refresh. The selected link is highlighted in light blue, and the sidebar remains fixed. The top bar shows the current page title with logout button.
+
+Feel free to further customize or extend these layouts and colors to match your branding requirements.
+
 ### Testing the Website
 
 **Available Pages:**
@@ -142,5 +159,21 @@ Press `Ctrl + C` in your terminal to stop the server.
 - The current implementation provides basic pages and form handling.
 - OTP and password reset functionality still need server-side logic and mailing setup.
 - Role-based redirects and middleware are implemented; other features (announcements, masterlist, etc.) require additional endpoints and UI.
+
+### Front‑end React/Tailwind Example
+A sample React front-end has been added under `frontend/` demonstrating a glassmorphic SaaS-style layout with
+UI/UX improvements and a functional sidebar. To try it:
+
+1. `cd frontend`
+2. `npm install` (ensure [Node.js](https://nodejs.org/) is installed)
+3. `npm run start` (this uses Create React App and Tailwind CSS)
+
+The example includes:
+- `Login` / `Register` pages with icons and toast-style errors
+- A `Layout` component wrapping a collapsible `Sidebar` and top bar
+- State-based routing without full page reloads
+- Responsive behavior including a hamburger menu on mobile
+
+You can adapt these components or copy styles into your existing EJS/HTML pages.
 
 Feel free to expand on this structure to fit requirements more completely.

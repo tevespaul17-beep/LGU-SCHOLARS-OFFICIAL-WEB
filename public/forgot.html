@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forgot Password</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pIwXN5qQ4IYHn5QjNqjmq6WjzPJfh4Y5Fe2a2k+BCVnDGGpR/B5nCWy+ZJc6S5v4AfxTDCXSeI5VgxkwPJ7jtg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Forgot Password</h1>
+    <h1 style="color: var(--deep-blue);">Forgot Password</h1>
+    <div id="message"></div>
     <form id="forgotForm">
-      <label for="email">Registered Email</label>
-      <input type="email" id="email" name="email" required>
+      <div class="input-icon">
+        <i class="fa fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Registered Email" required>
+      </div>
       <button type="submit">Send OTP</button>
     </form>
-    <div id="message"></div>
   </div>
   <script>
     document.getElementById('forgotForm').addEventListener('submit', async (e) => {

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color variables for Ormoc City theme */
+:root {
+  --deep-blue: #002f6c;
+  --light-blue: #a7c7e7;
+}
+
+/* glassmorphism card style adapted */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* custom font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
