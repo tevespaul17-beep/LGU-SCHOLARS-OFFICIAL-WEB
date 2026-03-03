@@ -114,10 +114,10 @@ button:hover {
   margin-right: 10px;
 }
 
-.sidebar ul li.active,
+.sidebar ul li.active a,
 .sidebar ul li a:hover {
-  background-color: #e0f2fe;
-  border-left: 4px solid #0ea5e9;
+  background-color: var(--light-blue);
+  border-left: 4px solid var(--deep-blue);
 }
 
 main {
